@@ -64,14 +64,14 @@ public void mainTest() {
 	object.login();
 	testData = TestDataObj.getSignInData();
 	object.navigation();
-	object.addBanner(testData[0], testData[1], testData[2], testData[3], testData[4], testData[5], testData[6], testData[7], testData[8], testData[9], testData[10],testData[13]);
+	object.addBanner(testData[0], testData[1], testData[2], testData[3], testData[4], testData[5], testData[6], testData[7], testData[8], testData[9], testData[10],Boolean.parseBoolean(testData[13]));
 	
 	
 	
 	
 	//VERIFICATION
 	ArrayList<String> expectedArray = new ArrayList<String>();
-	for(int i=0;i<=12;i++)
+	for(int i=0;i<=10;i++)
 	{
 		expectedArray.add(testData[i]);
 	}

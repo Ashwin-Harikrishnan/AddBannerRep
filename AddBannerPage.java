@@ -199,7 +199,7 @@ public class AddBannerPage {
 	
 
 	// MAIN TEST METHOD
-	public void addBanner(String engTitle, String araTitle, String engImg, String araImg, String country, String grade, String sDate, String eDate, String url, String language, String status, String checkBox) {
+	public void addBanner(String engTitle, String araTitle, String engImg, String araImg, String country, String grade, String sDate, String eDate, String url, String language, String status, boolean checkBox) {
 		
 		//System.out.println("THE GENERATED NAME IS:    "+eTitle +" , "+ aTitle);
 	try {	
@@ -256,11 +256,16 @@ public class AddBannerPage {
 		
 		System.out.println("THE VALUE IS: " + checkBox);
 		
-		if(checkBox == "TRUE")
+	
+				
+		if(checkBox)
 		{
 			paidUserCheckbox.click();
 		}
-		
+		else
+		{
+			System.out.println("User has not checked the checkbox");
+		}
 		
 		//buttonSave.click();
 		String successMessage = notificationSuccess.getText();
