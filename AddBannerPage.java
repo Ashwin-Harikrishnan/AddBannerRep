@@ -278,6 +278,7 @@ public class AddBannerPage {
 						+ "\n Expected Message: " + expectedMessage);
 		sleep(2000);
 		
+		System.out.println("This is filler for git");
 		//wait.until(ExpectedConditions.elementToBeClickable(detailsButton));
 		//detailsButton.click();
 		sleep(4000);
