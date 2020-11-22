@@ -80,7 +80,8 @@ public class AddBannerPage {
 	@FindBy(xpath = "//div[contains(text(),'Common ads added successfully')]")
 	public WebElement notificationSuccess;
 	
-	//div[@class = 'ng-tns-c4-1 ui-toast ui-widget ui-toast-top-right']
+	public String successMessage = notificationSuccess.getText();
+	public String expectedMessage = "Common ads added successfully";
 	
 
 	// CALENDAR
@@ -268,8 +269,7 @@ public class AddBannerPage {
 		}
 		
 		//buttonSave.click();
-		String successMessage = notificationSuccess.getText();
-		String expectedMessage = "Common ads added successfully";
+		
 		
 		System.out.println("THE MESSAGE IS: " + successMessage);
 		
